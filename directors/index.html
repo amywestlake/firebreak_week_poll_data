@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebreak: Sight and Sound Critics Results</title>
+    <meta name="robots" content="noindex">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+            .tablesorter-default .header,
+    .tablesorter-default .tablesorter-header {
+        background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+        background-position: center right;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        white-space: normal;
+    }
+    .tablesorter-default thead .headerSortUp,
+    .tablesorter-default thead .tablesorter-headerAsc,
+    .tablesorter-default thead .tablesorter-headerSortUp {
+        background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+        border-bottom: #000 2px solid;
+    }
+    .tablesorter-default thead .headerSortDown,
+    .tablesorter-default thead .tablesorter-headerDesc,
+    .tablesorter-default thead .tablesorter-headerSortDown {
+        background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+        border-bottom: #000 2px solid;
+    }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Main Header -->
+        <h1 class="text-4xl font-bold text-center mb-8">2022 Sight and Sound Critics Results</h1>
+        <nav class="bg-gray-200 p-4 rounded-md mb-8">
+            <ul class="flex space-x-4 justify-center">
+                <li>
+                    <a href="/" class="text-gray-800 hover:text-gray-600 font-semibold active">Film Data</a>
+                </li>
+                <li>
+                    <a href="/display" class="text-gray-800 hover:text-gray-600 font-semibold active">Film Display</a>
+                </li>
+                <li>
+                    <a href="/directors" class="text-gray-800 hover:text-gray-600 font-semibold">Directors</a>
+                </li>
+                <li>
+                    <a href="/actors" class="text-gray-800 hover:text-gray-600 font-semibold">Actors</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Directors</h2>
+            <div class="table_component" role="region" tabindex="0" class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300"id="myTable">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Director</th>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Films</th>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Critics votes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michael Powell, Emeric Pressburger</td>
+                        <td class="py-4 px-6 border-b"><strong>6</strong>: A Canterbury Tale,&quot;I Know Where I&#039;m Going!&quot;,The Life and Death of Colonel Blimp,Black Narcissus,A Matter of Life and Death,The Red Shoes</td>
+                        <td class="py-4 px-6 border-b">0.87%<br/>(132)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Alfred Hitchcock</td>
+                        <td class="py-4 px-6 border-b"><strong>6</strong>: The Birds,Notorious,North by Northwest,Rear Window,Psycho,Vertigo</td>
+                        <td class="py-4 px-6 border-b">2.67%<br/>(407)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Robert Bresson</td>
+                        <td class="py-4 px-6 border-b"><strong>5</strong>: Mouchette,L&#039;Argent,Pickpocket,A Man Escaped,Au hasard Balthazar</td>
+                        <td class="py-4 px-6 border-b">0.96%<br/>(147)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Stanley Kubrick</td>
+                        <td class="py-4 px-6 border-b"><strong>5</strong>: A Clockwork Orange,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,The Shining,Barry Lyndon,2001: A Space Odyssey</td>
+                        <td class="py-4 px-6 border-b">1.57%<br/>(239)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Ingmar Bergman</td>
+                        <td class="py-4 px-6 border-b"><strong>5</strong>: Cries and Whispers,The Seventh Seal,Fanny and Alexander,Wild Strawberries,Persona</td>
+                        <td class="py-4 px-6 border-b">1.06%<br/>(161)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jean-Luc Godard</td>
+                        <td class="py-4 px-6 border-b"><strong>5</strong>: Vivre sa vie  Film en douze tableaux,Histoire(s) du cinéma,Pierrot le fou,Le Mépris,À bout de souffle</td>
+                        <td class="py-4 px-6 border-b">0.98%<br/>(150)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Billy Wilder</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: Double Indemnity,Sunset Blvd.,The Apartment,Some Like It Hot</td>
+                        <td class="py-4 px-6 border-b">0.96%<br/>(147)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jean Renoir</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: The River,La Grande Illusion,Partie de campagne,La Règle du jeu</td>
+                        <td class="py-4 px-6 border-b">0.94%<br/>(144)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Akira Kurosawa</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: Ran,Ikiru,Rashomon,Seven Samurai</td>
+                        <td class="py-4 px-6 border-b">1.03%<br/>(157)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Agnès Varda</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: Le Bonheur,Sans toit ni loi,The Gleaners and I,Cléo from 5 to 7</td>
+                        <td class="py-4 px-6 border-b">1.10%<br/>(168)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Carl Th. Dreyer</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: Vampyr,Gertrud,Ordet,The Passion of Joan of Arc</td>
+                        <td class="py-4 px-6 border-b">1.04%<br/>(159)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Howard Hawks</td>
+                        <td class="py-4 px-6 border-b"><strong>4</strong>: His Girl Friday,Only Angels Have Wings,Bringing up Baby,Rio Bravo</td>
+                        <td class="py-4 px-6 border-b">0.70%<br/>(106)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">F.W. Murnau</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Der Letzte Mann,Nosferatu,Sunrise: A Song of Two Humans</td>
+                        <td class="py-4 px-6 border-b">0.82%<br/>(125)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">John Ford</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: My Darling Clementine,The Man Who Shot Liberty Valance,The Searchers</td>
+                        <td class="py-4 px-6 border-b">0.79%<br/>(120)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Apichatpong Weerasethakul</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: SANG SATTAWAT,Uncle Boonmee Who Can Recall His Past Lives,Tropical Malady</td>
+                        <td class="py-4 px-6 border-b">0.38%<br/>(58)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Abbas Kiarostami</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Taste of Cherry,Where is the Friend&#039;s House?,Close-up</td>
+                        <td class="py-4 px-6 border-b">0.71%<br/>(108)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Roberto Rossellini</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: EUROPA &#039;51,Paisà,Journey to Italy</td>
+                        <td class="py-4 px-6 border-b">0.43%<br/>(65)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Wong Kar Wai</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Happy Together,CHUNGKING EXPRESS,In the Mood for Love</td>
+                        <td class="py-4 px-6 border-b">1.23%<br/>(187)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">David Lynch</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Twin Peaks: Fire Walk with Me,Blue Velvet,Mulholland Dr.</td>
+                        <td class="py-4 px-6 border-b">1.00%<br/>(153)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Lucrecia Martel</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Zama,La mujer sin cabeza,La ciénaga</td>
+                        <td class="py-4 px-6 border-b">0.33%<br/>(51)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michelangelo Antonioni</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: L&#039;eclisse,Red Desert,L&#039;avventura</td>
+                        <td class="py-4 px-6 border-b">0.45%<br/>(69)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Yasujirō Ozu</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: An Autumn Afternoon,Late Spring,Tokyo Story</td>
+                        <td class="py-4 px-6 border-b">1.52%<br/>(231)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Orson Welles</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: The Magnificent Ambersons,Touch of Evil,Citizen Kane</td>
+                        <td class="py-4 px-6 border-b">1.36%<br/>(208)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sergio Leone</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: The Good, the Bad and the Ugly,Once upon a Time in America,Once upon a Time in the West</td>
+                        <td class="py-4 px-6 border-b">0.43%<br/>(66)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Luis Buñuel</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Un chien andalou,El ANGEL EXTERMINADOR,Los olvidados</td>
+                        <td class="py-4 px-6 border-b">0.34%<br/>(52)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Federico Fellini</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Amarcord,La dolce vita,8½</td>
+                        <td class="py-4 px-6 border-b">0.78%<br/>(119)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Martin Scorsese</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Raging Bull,GoodFellas,Taxi Driver</td>
+                        <td class="py-4 px-6 border-b">0.82%<br/>(125)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Francis Ford Coppola</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: The Godfather Part II,Apocalypse Now,The Godfather</td>
+                        <td class="py-4 px-6 border-b">1.28%<br/>(195)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Andrei Tarkovsky</td>
+                        <td class="py-4 px-6 border-b"><strong>3</strong>: Andrei Rublev,Stalker,Mirror</td>
+                        <td class="py-4 px-6 border-b">0.97%<br/>(148)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Claire Denis</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: L&#039;INTRUS,Beau travail</td>
+                        <td class="py-4 px-6 border-b">0.77%<br/>(118)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">David Cronenberg</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Videodrome,Crash</td>
+                        <td class="py-4 px-6 border-b">0.16%<br/>(25)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Víctor Erice</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: The Quince Tree Sun,The Spirit of the Beehive</td>
+                        <td class="py-4 px-6 border-b">0.30%<br/>(46)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Med Hondo</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Soleil Ô,Les Nègres marrons de la liberté</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(31)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Béla Tarr</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: WERCKMEISTER HARMÓNIÁK,Sátántangó</td>
+                        <td class="py-4 px-6 border-b">0.31%<br/>(47)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Hou Hsiao-Hsien</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: HAISHANG HUA,A City of Sadness</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(31)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Céline Sciamma</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Petite maman,Portrait of a Lady on Fire</td>
+                        <td class="py-4 px-6 border-b">0.48%<br/>(73)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">David Lean</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Brief Encounter,Lawrence of Arabia</td>
+                        <td class="py-4 px-6 border-b">0.24%<br/>(36)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Nicholas Ray</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: In a Lonely Place,Johnny Guitar</td>
+                        <td class="py-4 px-6 border-b">0.26%<br/>(39)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Steven Spielberg</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Raiders of the Lost Ark,Jaws</td>
+                        <td class="py-4 px-6 border-b">0.28%<br/>(43)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Terrence Malick</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: The Tree of Life,Days of Heaven</td>
+                        <td class="py-4 px-6 border-b">0.22%<br/>(34)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jacques Demy</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Les DEMOISELLES DE ROCHEFORT,The Umbrellas of Cherbourg</td>
+                        <td class="py-4 px-6 border-b">0.27%<br/>(41)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Wim Wenders</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Wings of Desire,Paris, Texas</td>
+                        <td class="py-4 px-6 border-b">0.21%<br/>(32)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">John Cassavetes</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Love Streams,A Woman under the Influence</td>
+                        <td class="py-4 px-6 border-b">0.28%<br/>(43)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Paul Thomas Anderson</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Magnolia,There Will Be Blood</td>
+                        <td class="py-4 px-6 border-b">0.27%<br/>(41)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Max Ophuls</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Letter from an Unknown Woman,Madame de...</td>
+                        <td class="py-4 px-6 border-b">0.32%<br/>(49)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Satyajit Ray</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: CHARULATA,Pather Panchali</td>
+                        <td class="py-4 px-6 border-b">0.48%<br/>(73)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Alain Resnais</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Hiroshima mon amour,Last Year at Marienbad</td>
+                        <td class="py-4 px-6 border-b">0.22%<br/>(34)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Ridley Scott</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Alien,Blade Runner</td>
+                        <td class="py-4 px-6 border-b">0.42%<br/>(64)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Ernst Lubitsch</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Trouble in Paradise,To Be or Not to Be</td>
+                        <td class="py-4 px-6 border-b">0.31%<br/>(48)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Douglas Sirk</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: All That Heaven Allows,Imitation of Life</td>
+                        <td class="py-4 px-6 border-b">0.37%<br/>(57)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Kenji Mizoguchi</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Ugetsu Monogatari,Sansho the Bailiff</td>
+                        <td class="py-4 px-6 border-b">0.45%<br/>(68)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Edward Yang</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Yi Yi,A Brighter Summer Day</td>
+                        <td class="py-4 px-6 border-b">0.44%<br/>(67)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Charles Chaplin</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Modern Times,City Lights</td>
+                        <td class="py-4 px-6 border-b">0.59%<br/>(90)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Hayao Miyazaki</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Spirited Away,My Neighbour Totoro</td>
+                        <td class="py-4 px-6 border-b">0.48%<br/>(73)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Fritz Lang</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: Metropolis,M</td>
+                        <td class="py-4 px-6 border-b">0.61%<br/>(93)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Chris Marker</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: La Jetée,Sans soleil</td>
+                        <td class="py-4 px-6 border-b">0.53%<br/>(81)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Chantal Akerman</td>
+                        <td class="py-4 px-6 border-b"><strong>2</strong>: News from Home,Jeanne Dielman  23, Quai du Commerce  1080 Bruxelles</td>
+                        <td class="py-4 px-6 border-b">1.71%<br/>(260)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Lizzie Borden</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Born In Flames</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Alexander Dovzhenko</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Earth</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">G.W. Pabst</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Die Büchse der Pandora</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Pedro Costa</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: In Vanda&#039;s Room</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Terence Davies</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Distant Voices, Still Lives</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Preston Sturges</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Sullivan&#039;s Travels</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Andrzej Zulawski</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Possession</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Patricio Guzmán</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Nostalgia for the Light</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Lynne Ramsay</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Morvern Callar</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Woody Allen</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Annie Hall</td>
+                        <td class="py-4 px-6 border-b">0.08%<br/>(12)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">King Vidor</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Crowd</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">King Hu</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: A Touch of Zen</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Barbara Kopple</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Harlan County, USA</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">George Lucas</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Star Wars</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Fernando Solanas</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Hour of the Furnaces</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">D.W. Griffith</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Intolerance</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Derek Jarman</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Blue</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Abel Gance</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Napoléon</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Isao Takahata</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Grave of the Fireflies</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Eric Rohmer</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Green Ray</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(13)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Mário Peixoto</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: LIMITE</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Dario Argento</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Suspiria</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">John Waters</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Pink Flamingos</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Eduardo Coutinho</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: A Man Marked to Die</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Leo McCarey</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Duck Soup</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jean-Pierre Melville</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Army of Shadows</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michael Cimino</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Deer Hunter</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Lars von Trier</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Melancholia</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Joseph L. Mankiewicz</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: All about Eve</td>
+                        <td class="py-4 px-6 border-b">0.09%<br/>(14)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michael Snow</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Wavelength</td>
+                        <td class="py-4 px-6 border-b">0.10%<br/>(15)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">George Miller</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Mad Max: Fury Road</td>
+                        <td class="py-4 px-6 border-b">0.10%<br/>(15)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jennie Livingston</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Paris Is Burning</td>
+                        <td class="py-4 px-6 border-b">0.10%<br/>(15)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Erich von Stroheim</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Greed</td>
+                        <td class="py-4 px-6 border-b">0.10%<br/>(16)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Guru Dutt</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Pyaasa</td>
+                        <td class="py-4 px-6 border-b">0.10%<br/>(16)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jonathan Glazer</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Under the Skin</td>
+                        <td class="py-4 px-6 border-b">0.11%<br/>(17)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">William Greaves</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Symbiopsychotaxiplasm: Take One</td>
+                        <td class="py-4 px-6 border-b">0.11%<br/>(17)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Tomás Gutiérrez Alea</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Memories of Underdevelopment</td>
+                        <td class="py-4 px-6 border-b">0.11%<br/>(17)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michael Mann</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Heat</td>
+                        <td class="py-4 px-6 border-b">0.11%<br/>(17)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sally Potter</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Orlando</td>
+                        <td class="py-4 px-6 border-b">0.12%<br/>(18)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jacques Tourneur</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Out of the Past</td>
+                        <td class="py-4 px-6 border-b">0.12%<br/>(18)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Pedro Almodóvar</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Todo sobre mi madre</td>
+                        <td class="py-4 px-6 border-b">0.12%<br/>(18)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Pier Paolo Pasolini</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Il vangelo secondo Matteo</td>
+                        <td class="py-4 px-6 border-b">0.12%<br/>(18)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Ritwik Ghatak</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Meghe Dhaka Tara</td>
+                        <td class="py-4 px-6 border-b">0.12%<br/>(19)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Cheryl Dunye</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Watermelon Woman</td>
+                        <td class="py-4 px-6 border-b">0.13%<br/>(20)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Marguerite Duras</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: INDIA SONG</td>
+                        <td class="py-4 px-6 border-b">0.13%<br/>(20)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Roman Polanski</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Chinatown</td>
+                        <td class="py-4 px-6 border-b">0.13%<br/>(20)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sarah Maldoror</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Sambizanga</td>
+                        <td class="py-4 px-6 border-b">0.14%<br/>(21)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Marcel Carné</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Les Enfants du paradis</td>
+                        <td class="py-4 px-6 border-b">0.14%<br/>(21)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sam Peckinpah</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Wild Bunch</td>
+                        <td class="py-4 px-6 border-b">0.14%<br/>(21)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Frank Capra</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: It&#039;s a Wonderful Life</td>
+                        <td class="py-4 px-6 border-b">0.14%<br/>(22)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Quentin Tarantino</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Pulp Fiction</td>
+                        <td class="py-4 px-6 border-b">0.15%<br/>(23)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Larissa Shepitko</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Ascent</td>
+                        <td class="py-4 px-6 border-b">0.16%<br/>(24)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">The Wachowskis</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Matrix</td>
+                        <td class="py-4 px-6 border-b">0.16%<br/>(25)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sergei Paradjanov</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Colour of Pomegranates</td>
+                        <td class="py-4 px-6 border-b">0.16%<br/>(25)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">John Carpenter</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Thing</td>
+                        <td class="py-4 px-6 border-b">0.17%<br/>(26)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Tobe Hooper</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Texas Chain Saw Massacre</td>
+                        <td class="py-4 px-6 border-b">0.17%<br/>(26)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Werner Herzog</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Aguirre, Wrath of God</td>
+                        <td class="py-4 px-6 border-b">0.17%<br/>(26)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Bernardo Bertolucci</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Conformist</td>
+                        <td class="py-4 px-6 border-b">0.17%<br/>(26)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Robert Altman</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Nashville</td>
+                        <td class="py-4 px-6 border-b">0.18%<br/>(27)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Nicolas Roeg</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Don&#039;t Look Now</td>
+                        <td class="py-4 px-6 border-b">0.18%<br/>(27)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Victor Fleming</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Wizard of Oz</td>
+                        <td class="py-4 px-6 border-b">0.18%<br/>(28)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Tsai Ming-liang</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Goodbye, Dragon Inn</td>
+                        <td class="py-4 px-6 border-b">0.18%<br/>(28)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jean Eustache</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: La Maman et la Putain</td>
+                        <td class="py-4 px-6 border-b">0.19%<br/>(29)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Elem Klimov</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Come and See</td>
+                        <td class="py-4 px-6 border-b">0.19%<br/>(29)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Forough Farokhzad</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The House Is Black</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(30)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jordan Peele</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Get Out</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(31)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Buster Keaton, Clyde Bruckman</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The General</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(31)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Ousmane Sembène</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Black Girl</td>
+                        <td class="py-4 px-6 border-b">0.20%<br/>(31)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Luchino Visconti</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Leopard</td>
+                        <td class="py-4 px-6 border-b">0.21%<br/>(32)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Bong Joon-ho</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Parasite</td>
+                        <td class="py-4 px-6 border-b">0.21%<br/>(32)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jacques Rivette</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Céline and Julie Go Boating</td>
+                        <td class="py-4 px-6 border-b">0.23%<br/>(35)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Djibril Diop Mambéty</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Touki Bouki</td>
+                        <td class="py-4 px-6 border-b">0.26%<br/>(39)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Michael Curtiz</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Casablanca</td>
+                        <td class="py-4 px-6 border-b">0.26%<br/>(40)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Carol Reed</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Third Man</td>
+                        <td class="py-4 px-6 border-b">0.26%<br/>(40)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Julie Dash</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Daughters of the Dust</td>
+                        <td class="py-4 px-6 border-b">0.28%<br/>(42)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Barry Jenkins</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Moonlight</td>
+                        <td class="py-4 px-6 border-b">0.28%<br/>(42)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Buster Keaton</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Sherlock Jr.</td>
+                        <td class="py-4 px-6 border-b">0.29%<br/>(44)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Sergei M. Eisenstein</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Battleship Potemkin</td>
+                        <td class="py-4 px-6 border-b">0.29%<br/>(44)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Rainer Werner Fassbinder</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Fear Eats the Soul</td>
+                        <td class="py-4 px-6 border-b">0.30%<br/>(45)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jane Campion</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Piano</td>
+                        <td class="py-4 px-6 border-b">0.30%<br/>(46)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">François Truffaut</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The 400 Blows</td>
+                        <td class="py-4 px-6 border-b">0.30%<br/>(46)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Barbara Loden</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Wanda</td>
+                        <td class="py-4 px-6 border-b">0.31%<br/>(48)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Gillo Pontecorvo</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Battle of Algiers</td>
+                        <td class="py-4 px-6 border-b">0.32%<br/>(49)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Charles Burnett</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Killer of Sheep</td>
+                        <td class="py-4 px-6 border-b">0.33%<br/>(51)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Vittorio De Sica</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Bicycle Thieves</td>
+                        <td class="py-4 px-6 border-b">0.34%<br/>(52)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jean Vigo</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: L&#039;Atalante</td>
+                        <td class="py-4 px-6 border-b">0.38%<br/>(58)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Věra Chytilová</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Daisies</td>
+                        <td class="py-4 px-6 border-b">0.41%<br/>(63)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Claude Lanzmann</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Shoah</td>
+                        <td class="py-4 px-6 border-b">0.42%<br/>(64)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Charles Laughton</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: The Night of the Hunter</td>
+                        <td class="py-4 px-6 border-b">0.43%<br/>(66)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Spike Lee</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Do the Right Thing</td>
+                        <td class="py-4 px-6 border-b">0.44%<br/>(67)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Jacques Tati</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Playtime</td>
+                        <td class="py-4 px-6 border-b">0.45%<br/>(68)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Maya Deren, Alexander Hackenschmied</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Meshes of the Afternoon</td>
+                        <td class="py-4 px-6 border-b">0.52%<br/>(79)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Gene Kelly, Stanley Donen</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Singin&#039; in the Rain</td>
+                        <td class="py-4 px-6 border-b">0.65%<br/>(99)</td>
+                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 border-b">Dziga Vertov</td>
+                        <td class="py-4 px-6 border-b"><strong>1</strong>: Man with a Movie Camera</td>
+                        <td class="py-4 px-6 border-b">0.66%<br/>(100)</td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.32.0/js/jquery.tablesorter.min.js" integrity="sha512-O/JP2r8BG27p5NOtVhwqsSokAwEP5RwYgvEzU9G6AfNjLYqyt2QT8jqU1XrXCiezS50Qp1i3ZtCQWkHZIRulGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        jQuery(function() {
+            $("#myTable").tablesorter();
+        });
+    </script>
+</body>
+</html>

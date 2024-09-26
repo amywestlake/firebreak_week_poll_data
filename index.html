@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <title>Firebreak: Sight and Sound Critics Results</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Main Header -->
+        <h1 class="text-4xl font-bold text-center mb-8">2022 Sight and Sound Critics Results</h1>
+        <nav class="bg-gray-200 p-4 rounded-md mb-8">
+            <ul class="flex space-x-4 justify-center">
+                <li>
+                    <a href="/" class="text-gray-800 hover:text-gray-600 font-semibold active">Film Data</a>
+                </li>
+                <li>
+                    <a href="/display" class="text-gray-800 hover:text-gray-600 font-semibold active">Film Display</a>
+                </li>
+                <li>
+                    <a href="/directors" class="text-gray-800 hover:text-gray-600 font-semibold">Directors</a>
+                </li>
+                <li>
+                    <a href="/actors" class="text-gray-800 hover:text-gray-600 font-semibold">Actors</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="mb-8">
+            <div id="decadeChart" class="w-full h-96 bg-white shadow-md rounded-md"></div>
+        </section>
+
+        <section class="mb-8">
+            <div id="mapChart" class="w-full h-96 bg-white shadow-md rounded-md"></div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Top 10 films by votes</h2>
+            <div class="table_component" role="region" tabindex="0" class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300"id="myTable">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Film</th>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Total critics votes</th>
+                            <th class="py-3 px-6 text-left text-gray-700 font-semibold uppercase text-sm border-b">Critics Vote Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Jeanne Dielman  23, Quai du Commerce  1080 Bruxelles</td>
+                            <td class="py-4 px-6 border-b">215</td>
+                            <td class="py-4 px-6 border-b">1.41%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Vertigo</td>
+                            <td class="py-4 px-6 border-b">208</td>
+                            <td class="py-4 px-6 border-b">1.36%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Citizen Kane</td>
+                            <td class="py-4 px-6 border-b">163</td>
+                            <td class="py-4 px-6 border-b">1.07%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Tokyo Story</td>
+                            <td class="py-4 px-6 border-b">145</td>
+                            <td class="py-4 px-6 border-b">0.95%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">In the Mood for Love</td>
+                            <td class="py-4 px-6 border-b">141</td>
+                            <td class="py-4 px-6 border-b">0.92%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">2001: A Space Odyssey</td>
+                            <td class="py-4 px-6 border-b">130</td>
+                            <td class="py-4 px-6 border-b">0.85%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Beau travail</td>
+                            <td class="py-4 px-6 border-b">106</td>
+                            <td class="py-4 px-6 border-b">0.70%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Mulholland Dr.</td>
+                            <td class="py-4 px-6 border-b">105</td>
+                            <td class="py-4 px-6 border-b">0.69%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Man with a Movie Camera</td>
+                            <td class="py-4 px-6 border-b">100</td>
+                            <td class="py-4 px-6 border-b">0.66%</td>
+                        </tr>
+                                            <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 border-b">Singin&#039; in the Rain</td>
+                            <td class="py-4 px-6 border-b">99</td>
+                            <td class="py-4 px-6 border-b">0.65%</td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div id="scatterChart" class="w-full h-96 bg-white shadow-md rounded-md"></div>
+        </section>
+
+       
+    </div>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+    
+    <script>
+        // Films by country chart
+        var filmsByCountry = [{"name":"United States of America","total_films":99},{"name":"France","total_films":77},{"name":"Italy","total_films":30},{"name":"United Kingdom","total_films":26},{"name":"Japan","total_films":18},{"name":"Germany","total_films":13},{"name":"Federal Republic of Germany","total_films":9},{"name":"USSR","total_films":9},{"name":"Spain","total_films":8},{"name":"Switzerland","total_films":8},{"name":"Sweden","total_films":7},{"name":"Taiwan","total_films":6},{"name":"Argentina","total_films":4},{"name":"Brazil","total_films":4},{"name":"Canada","total_films":4},{"name":"Hong Kong","total_films":4},{"name":"India","total_films":4},{"name":"Iran","total_films":4},{"name":"Netherlands","total_films":4},{"name":"Australia","total_films":3},{"name":"Denmark","total_films":3},{"name":"Mexico","total_films":3},{"name":"Thailand","total_films":3},{"name":"Belgium","total_films":2},{"name":"Hungary","total_films":2},{"name":"Portugal","total_films":2},{"name":"Republic of Korea","total_films":2},{"name":"Senegal","total_films":2},{"name":"Ukrainian SSR","total_films":2},{"name":"Algeria","total_films":1},{"name":"Angola","total_films":1},{"name":"Armenian SSR","total_films":1},{"name":"Austria","total_films":1},{"name":"Byelorussian SSR","total_films":1},{"name":"Chile","total_films":1},{"name":"Congo","total_films":1},{"name":"Cuba","total_films":1},{"name":"Czechoslovakia","total_films":1},{"name":"Dominican Republic","total_films":1},{"name":"Lebanon","total_films":1},{"name":"Mauritania","total_films":1},{"name":"Monaco","total_films":1},{"name":"Russian Federation","total_films":1}];
+
+        // Function to transform filmsByCountry data into Highcharts format
+        function transformData(data) {
+            return data.map(function (item) {
+                return {
+                    code: item.name,            // Country name
+                    value: item.total_films     // Number of films
+                };
+            });
+        }
+
+        (async () => {
+            // Fetch the world map topology data
+            const topology = await fetch(
+                'https://code.highcharts.com/mapdata/custom/world.topo.json'
+            ).then(response => response.json());
+
+            // Transform the films data for Highcharts
+            const transformedData = transformData(filmsByCountry);
+
+            Highcharts.mapChart('mapChart', {
+                chart: {
+                    map: topology
+                },
+
+                title: {
+                    text: 'Number of films per country',
+                    align: 'left'
+                },
+
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
+
+                colorAxis: {
+                    min: 0,
+                    minColor: '#FFFFFF',
+                    maxColor: Highcharts.getOptions().colors[0] 
+                },
+
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '<b>{point.name}</b>: {point.value} films'
+                },
+
+                series: [{
+                    name: 'Number of films',
+                    joinBy: ['name', 'code'], 
+                    data: transformedData,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.value:.0f}'
+                    }
+                }]
+            });
+
+        })();
+
+        // Films by decade chart
+        var decadesData = [{"decade":2020,"total_films":1},{"decade":2010,"total_films":11},{"decade":2000,"total_films":14},{"decade":1990,"total_films":23},{"decade":1980,"total_films":30},{"decade":1970,"total_films":40},{"decade":1960,"total_films":48},{"decade":1950,"total_films":35},{"decade":1940,"total_films":24},{"decade":1930,"total_films":16},{"decade":1920,"total_films":14},{"decade":1910,"total_films":1}];
+
+        // Extracting the decades and the corresponding total films
+        var categories = decadesData.map(function(item) {
+            return item.decade; 
+        });
+
+        // Get the total films for that decade
+        var data = decadesData.map(function(item) {
+            return item.total_films; 
+        });
+
+        // Creating the Highcharts bar chart
+        Highcharts.chart('decadeChart', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Number of films by decade',
+                align: 'left'
+            },
+            xAxis: {
+                categories: categories,
+                title: {
+                    text: null
+                },
+                gridLineWidth: 1,
+                lineWidth: 0
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of Films',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                },
+                gridLineWidth: 0
+            },
+            tooltip: {
+                valueSuffix: ' films' 
+            },
+            plotOptions: {
+                bar: {
+                    borderRadius: '50%',
+                    dataLabels: {
+                        enabled: true
+                    },
+                    groupPadding: 0.1
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'Films', 
+                data: data 
+            }]
+        });
+
+        // Films by vote chart
+        var filmsByVote = [{"id":257,"name":"Jeanne Dielman  23, Quai du Commerce  1080 Bruxelles","critic_votes":215,"director_votes":46},{"id":256,"name":"Vertigo","critic_votes":208,"director_votes":37},{"id":255,"name":"Citizen Kane","critic_votes":163,"director_votes":52},{"id":254,"name":"Tokyo Story","critic_votes":145,"director_votes":46},{"id":253,"name":"In the Mood for Love","critic_votes":141,"director_votes":33},{"id":252,"name":"2001: A Space Odyssey","critic_votes":130,"director_votes":62},{"id":251,"name":"Beau travail","critic_votes":106,"director_votes":28},{"id":250,"name":"Mulholland Dr.","critic_votes":105,"director_votes":23},{"id":249,"name":"Man with a Movie Camera","critic_votes":100,"director_votes":19},{"id":248,"name":"Singin' in the Rain","critic_votes":99,"director_votes":12},{"id":247,"name":"Sunrise: A Song of Two Humans","critic_votes":98,"director_votes":18},{"id":246,"name":"The Godfather","critic_votes":94,"director_votes":48},{"id":245,"name":"La R\u00e8gle du jeu","critic_votes":87,"director_votes":15},{"id":244,"name":"Cl\u00e9o from 5 to 7","critic_votes":81,"director_votes":12},{"id":243,"name":"The Searchers","critic_votes":80,"director_votes":10},{"id":242,"name":"Meshes of the Afternoon","critic_votes":79,"director_votes":11},{"id":241,"name":"Close-up","critic_votes":78,"director_votes":33},{"id":240,"name":"Persona","critic_votes":76,"director_votes":33},{"id":239,"name":"Apocalypse Now","critic_votes":72,"director_votes":27},{"id":238,"name":"Seven Samurai","critic_votes":71,"director_votes":28},{"id":236,"name":"Late Spring","critic_votes":70,"director_votes":11},{"id":237,"name":"The Passion of Joan of Arc","critic_votes":70,"director_votes":19},{"id":235,"name":"Playtime","critic_votes":68,"director_votes":14},{"id":234,"name":"Do the Right Thing","critic_votes":67,"director_votes":20},{"id":232,"name":"The Night of the Hunter","critic_votes":66,"director_votes":14},{"id":233,"name":"Au hasard Balthazar","critic_votes":66,"director_votes":16},{"id":231,"name":"Shoah","critic_votes":64,"director_votes":10},{"id":230,"name":"Daisies","critic_votes":63,"director_votes":3},{"id":229,"name":"Taxi Driver","critic_votes":62,"director_votes":29},{"id":228,"name":"Portrait of a Lady on Fire","critic_votes":60,"director_votes":5},{"id":225,"name":"Psycho","critic_votes":59,"director_votes":13},{"id":226,"name":"Mirror","critic_votes":59,"director_votes":34},{"id":227,"name":"8\u00bd","critic_votes":59,"director_votes":37},{"id":224,"name":"L'Atalante","critic_votes":58,"director_votes":13},{"id":223,"name":"Pather Panchali","critic_votes":56,"director_votes":23},{"id":221,"name":"M","critic_votes":55,"director_votes":5},{"id":222,"name":"City Lights","critic_votes":55,"director_votes":13},{"id":218,"name":"Rear Window","critic_votes":53,"director_votes":5},{"id":219,"name":"Some Like It Hot","critic_votes":53,"director_votes":11},{"id":220,"name":"\u00c0 bout de souffle","critic_votes":53,"director_votes":28},{"id":216,"name":"Rashomon","critic_votes":52,"director_votes":24},{"id":217,"name":"Bicycle Thieves","critic_votes":52,"director_votes":24},{"id":214,"name":"Killer of Sheep","critic_votes":51,"director_votes":6},{"id":215,"name":"Stalker","critic_votes":51,"director_votes":28},{"id":211,"name":"North by Northwest","critic_votes":49,"director_votes":8},{"id":212,"name":"The Battle of Algiers","critic_votes":49,"director_votes":23},{"id":213,"name":"Barry Lyndon","critic_votes":49,"director_votes":29},{"id":209,"name":"Wanda","critic_votes":48,"director_votes":9},{"id":210,"name":"Ordet","critic_votes":48,"director_votes":19},{"id":207,"name":"The Piano","critic_votes":46,"director_votes":12},{"id":208,"name":"The 400 Blows","critic_votes":46,"director_votes":17},{"id":205,"name":"News from Home","critic_votes":45,"director_votes":10},{"id":206,"name":"Fear Eats the Soul","critic_votes":45,"director_votes":12},{"id":200,"name":"Sherlock Jr.","critic_votes":44,"director_votes":5},{"id":201,"name":"The Apartment","critic_votes":44,"director_votes":6},{"id":202,"name":"Battleship Potemkin","critic_votes":44,"director_votes":9},{"id":203,"name":"Blade Runner","critic_votes":44,"director_votes":11},{"id":204,"name":"Le M\u00e9pris","critic_votes":44,"director_votes":13},{"id":199,"name":"Sans soleil","critic_votes":43,"director_votes":10},{"id":196,"name":"Daughters of the Dust","critic_votes":42,"director_votes":4},{"id":197,"name":"Moonlight","critic_votes":42,"director_votes":9},{"id":198,"name":"La dolce vita","critic_votes":42,"director_votes":17},{"id":193,"name":"Casablanca","critic_votes":40,"director_votes":4},{"id":194,"name":"The Third Man","critic_votes":40,"director_votes":5},{"id":195,"name":"GoodFellas","critic_votes":40,"director_votes":21},{"id":192,"name":"Touki Bouki","critic_votes":39,"director_votes":10},{"id":187,"name":"Metropolis","critic_votes":38,"director_votes":4},{"id":188,"name":"The Gleaners and I","critic_votes":38,"director_votes":6},{"id":189,"name":"The Red Shoes","critic_votes":38,"director_votes":10},{"id":190,"name":"La Jet\u00e9e","critic_votes":38,"director_votes":17},{"id":191,"name":"Andrei Rublev","critic_votes":38,"director_votes":22},{"id":184,"name":"My Neighbour Totoro","critic_votes":37,"director_votes":5},{"id":185,"name":"Journey to Italy","critic_votes":37,"director_votes":6},{"id":186,"name":"L'avventura","critic_votes":37,"director_votes":15},{"id":181,"name":"Sansho the Bailiff","critic_votes":36,"director_votes":3},{"id":182,"name":"Imitation of Life","critic_votes":36,"director_votes":7},{"id":183,"name":"Spirited Away","critic_votes":36,"director_votes":7},{"id":175,"name":"C\u00e9line and Julie Go Boating","critic_votes":35,"director_votes":5},{"id":176,"name":"A Matter of Life and Death","critic_votes":35,"director_votes":7},{"id":177,"name":"Modern Times","critic_votes":35,"director_votes":10},{"id":178,"name":"A Brighter Summer Day","critic_votes":35,"director_votes":10},{"id":179,"name":"S\u00e1t\u00e1ntang\u00f3","critic_votes":35,"director_votes":11},{"id":180,"name":"Sunset Blvd.","critic_votes":35,"director_votes":11},{"id":172,"name":"Pierrot le fou","critic_votes":34,"director_votes":5},{"id":173,"name":"The Spirit of the Beehive","critic_votes":34,"director_votes":10},{"id":174,"name":"Blue Velvet","critic_votes":34,"director_votes":10},{"id":169,"name":"CHUNGKING EXPRESS","critic_votes":33,"director_votes":4},{"id":170,"name":"The Shining","critic_votes":33,"director_votes":8},{"id":164,"name":"Madame de...","critic_votes":32,"director_votes":5},{"id":165,"name":"The Leopard","critic_votes":32,"director_votes":6},{"id":166,"name":"Ugetsu Monogatari","critic_votes":32,"director_votes":8},{"id":167,"name":"Yi Yi","critic_votes":32,"director_votes":9},{"id":168,"name":"Parasite","critic_votes":32,"director_votes":9},{"id":158,"name":"Get Out","critic_votes":31,"director_votes":0},{"id":159,"name":"The General","critic_votes":31,"director_votes":4},{"id":160,"name":"Black Girl","critic_votes":31,"director_votes":7},{"id":161,"name":"Tropical Malady","critic_votes":31,"director_votes":11},{"id":162,"name":"Once upon a Time in the West","critic_votes":31,"director_votes":13},{"id":163,"name":"A Man Escaped","critic_votes":31,"director_votes":14},{"id":155,"name":"Rio Bravo","critic_votes":30,"director_votes":4},{"id":156,"name":"The House Is Black","critic_votes":30,"director_votes":5},{"id":157,"name":"Sans toit ni loi","critic_votes":30,"director_votes":14},{"id":151,"name":"Jaws","critic_votes":29,"director_votes":11},{"id":152,"name":"La Maman et la Putain","critic_votes":29,"director_votes":12},{"id":153,"name":"Come and See","critic_votes":29,"director_votes":14},{"id":154,"name":"The Godfather Part II","critic_votes":29,"director_votes":22},{"id":145,"name":"Bringing up Baby","critic_votes":28,"director_votes":2},{"id":146,"name":"The Wizard of Oz","critic_votes":28,"director_votes":3},{"id":147,"name":"Goodbye, Dragon Inn","critic_votes":28,"director_votes":3},{"id":148,"name":"The Man Who Shot Liberty Valance","critic_votes":28,"director_votes":5},{"id":149,"name":"Touch of Evil","critic_votes":28,"director_votes":7},{"id":150,"name":"Wild Strawberries","critic_votes":28,"director_votes":10},{"id":141,"name":"To Be or Not to Be","critic_votes":27,"director_votes":5},{"id":142,"name":"Nashville","critic_votes":27,"director_votes":8},{"id":143,"name":"Don't Look Now","critic_votes":27,"director_votes":13},{"id":144,"name":"A Woman under the Influence","critic_votes":27,"director_votes":26},{"id":137,"name":"The Thing","critic_votes":26,"director_votes":2},{"id":138,"name":"The Texas Chain Saw Massacre","critic_votes":26,"director_votes":5},{"id":139,"name":"Aguirre, Wrath of God","critic_votes":26,"director_votes":5},{"id":140,"name":"The Conformist","critic_votes":26,"director_votes":9},{"id":131,"name":"Johnny Guitar","critic_votes":25,"director_votes":1},{"id":132,"name":"The Matrix","critic_votes":25,"director_votes":3},{"id":133,"name":"Only Angels Have Wings","critic_votes":25,"director_votes":3},{"id":134,"name":"The Umbrellas of Cherbourg","critic_votes":25,"director_votes":5},{"id":135,"name":"There Will Be Blood","critic_votes":25,"director_votes":6},{"id":136,"name":"The Colour of Pomegranates","critic_votes":25,"director_votes":9},{"id":130,"name":"The Ascent","critic_votes":24,"director_votes":10},{"id":126,"name":"His Girl Friday","critic_votes":23,"director_votes":4},{"id":127,"name":"Pulp Fiction","critic_votes":23,"director_votes":8},{"id":128,"name":"Fanny and Alexander","critic_votes":23,"director_votes":12},{"id":129,"name":"Raging Bull","critic_votes":23,"director_votes":23},{"id":123,"name":"Notorious","critic_votes":22,"director_votes":4},{"id":124,"name":"It's a Wonderful Life","critic_votes":22,"director_votes":8},{"id":125,"name":"Lawrence of Arabia","critic_votes":22,"director_votes":11},{"id":113,"name":"Trouble in Paradise","critic_votes":21,"director_votes":0},{"id":114,"name":"All That Heaven Allows","critic_votes":21,"director_votes":0},{"id":115,"name":"Sambizanga","critic_votes":21,"director_votes":2},{"id":116,"name":"Les Enfants du paradis","critic_votes":21,"director_votes":3},{"id":117,"name":"Partie de campagne","critic_votes":21,"director_votes":3},{"id":118,"name":"The Wild Bunch","critic_votes":21,"director_votes":6},{"id":119,"name":"Gertrud","critic_votes":21,"director_votes":6},{"id":120,"name":"Pickpocket","critic_votes":21,"director_votes":9},{"id":121,"name":"The Seventh Seal","critic_votes":21,"director_votes":10},{"id":122,"name":"La ci\u00e9naga","critic_votes":21,"director_votes":11},{"id":107,"name":"The Watermelon Woman","critic_votes":20,"director_votes":1},{"id":108,"name":"Vampyr","critic_votes":20,"director_votes":2},{"id":109,"name":"La Grande Illusion","critic_votes":20,"director_votes":5},{"id":110,"name":"INDIA SONG","critic_votes":20,"director_votes":6},{"id":111,"name":"Alien","critic_votes":20,"director_votes":8},{"id":112,"name":"Chinatown","critic_votes":20,"director_votes":10},{"id":103,"name":"Meghe Dhaka Tara","critic_votes":19,"director_votes":1},{"id":104,"name":"Les N\u00e8gres marrons de la libert\u00e9","critic_votes":19,"director_votes":2},{"id":105,"name":"Le Bonheur","critic_votes":19,"director_votes":2},{"id":106,"name":"Days of Heaven","critic_votes":19,"director_votes":5},{"id":92,"name":"Orlando","critic_votes":18,"director_votes":1},{"id":93,"name":"Once upon a Time in America","critic_votes":18,"director_votes":2},{"id":94,"name":"Out of the Past","critic_votes":18,"director_votes":2},{"id":95,"name":"Todo sobre mi madre","critic_votes":18,"director_votes":3},{"id":96,"name":"Los olvidados","critic_votes":18,"director_votes":4},{"id":97,"name":"A City of Sadness","critic_votes":18,"director_votes":5},{"id":98,"name":"Amarcord","critic_votes":18,"director_votes":5},{"id":99,"name":"Vivre sa vie  Film en douze tableaux","critic_votes":18,"director_votes":6},{"id":100,"name":"Il vangelo secondo Matteo","critic_votes":18,"director_votes":8},{"id":101,"name":"Where is the Friend's House?","critic_votes":18,"director_votes":10},{"id":102,"name":"Ikiru","critic_votes":18,"director_votes":10},{"id":77,"name":"Letter from an Unknown Woman","critic_votes":17,"director_votes":0},{"id":78,"name":"Under the Skin","critic_votes":17,"director_votes":2},{"id":79,"name":"Black Narcissus","critic_votes":17,"director_votes":2},{"id":80,"name":"Symbiopsychotaxiplasm: Take One","critic_votes":17,"director_votes":2},{"id":81,"name":"The Magnificent Ambersons","critic_votes":17,"director_votes":2},{"id":82,"name":"CHARULATA","critic_votes":17,"director_votes":2},{"id":83,"name":"Memories of Underdevelopment","critic_votes":17,"director_votes":2},{"id":84,"name":"Heat","critic_votes":17,"director_votes":4},{"id":85,"name":"Hiroshima mon amour","critic_votes":17,"director_votes":5},{"id":86,"name":"The Good, the Bad and the Ugly","critic_votes":17,"director_votes":5},{"id":87,"name":"Red Desert","critic_votes":17,"director_votes":5},{"id":88,"name":"Un chien andalou","critic_votes":17,"director_votes":7},{"id":89,"name":"Last Year at Marienbad","critic_votes":17,"director_votes":7},{"id":90,"name":"El ANGEL EXTERMINADOR","critic_votes":17,"director_votes":8},{"id":91,"name":"L'Argent","critic_votes":17,"director_votes":10},{"id":66,"name":"Les DEMOISELLES DE ROCHEFORT","critic_votes":16,"director_votes":0},{"id":67,"name":"Wings of Desire","critic_votes":16,"director_votes":0},{"id":68,"name":"The Birds","critic_votes":16,"director_votes":1},{"id":69,"name":"Greed","critic_votes":16,"director_votes":2},{"id":70,"name":"The River","critic_votes":16,"director_votes":3},{"id":71,"name":"Pyaasa","critic_votes":16,"director_votes":4},{"id":72,"name":"An Autumn Afternoon","critic_votes":16,"director_votes":4},{"id":73,"name":"Ran","critic_votes":16,"director_votes":5},{"id":74,"name":"Love Streams","critic_votes":16,"director_votes":6},{"id":75,"name":"Paris, Texas","critic_votes":16,"director_votes":7},{"id":76,"name":"Magnolia","critic_votes":16,"director_votes":7},{"id":52,"name":"\"I Know Where I'm Going!\"","critic_votes":15,"director_votes":1},{"id":53,"name":"The Life and Death of Colonel Blimp","critic_votes":15,"director_votes":2},{"id":54,"name":"Pais\u00e0","critic_votes":15,"director_votes":2},{"id":55,"name":"Double Indemnity","critic_votes":15,"director_votes":3},{"id":56,"name":"Zama","critic_votes":15,"director_votes":3},{"id":57,"name":"Nosferatu","critic_votes":15,"director_votes":3},{"id":58,"name":"Wavelength","critic_votes":15,"director_votes":5},{"id":59,"name":"Mad Max: Fury Road","critic_votes":15,"director_votes":5},{"id":60,"name":"Paris Is Burning","critic_votes":15,"director_votes":6},{"id":61,"name":"The Tree of Life","critic_votes":15,"director_votes":6},{"id":62,"name":"La mujer sin cabeza","critic_votes":15,"director_votes":7},{"id":63,"name":"Uncle Boonmee Who Can Recall His Past Lives","critic_votes":15,"director_votes":8},{"id":64,"name":"L'eclisse","critic_votes":15,"director_votes":8},{"id":65,"name":"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb","critic_votes":15,"director_votes":13},{"id":39,"name":"LIMITE","critic_votes":14,"director_votes":0},{"id":40,"name":"Suspiria","critic_votes":14,"director_votes":0},{"id":41,"name":"Pink Flamingos","critic_votes":14,"director_votes":0},{"id":42,"name":"A Man Marked to Die","critic_votes":14,"director_votes":1},{"id":43,"name":"Twin Peaks: Fire Walk with Me","critic_votes":14,"director_votes":2},{"id":44,"name":"Duck Soup","critic_votes":14,"director_votes":3},{"id":45,"name":"Army of Shadows","critic_votes":14,"director_votes":3},{"id":46,"name":"Brief Encounter","critic_votes":14,"director_votes":3},{"id":47,"name":"In a Lonely Place","critic_votes":14,"director_votes":3},{"id":48,"name":"Raiders of the Lost Ark","critic_votes":14,"director_votes":4},{"id":49,"name":"The Deer Hunter","critic_votes":14,"director_votes":5},{"id":50,"name":"Melancholia","critic_votes":14,"director_votes":5},{"id":51,"name":"All about Eve","critic_votes":14,"director_votes":6},{"id":23,"name":"The Crowd","critic_votes":13,"director_votes":0},{"id":24,"name":"HAISHANG HUA","critic_votes":13,"director_votes":0},{"id":25,"name":"A Touch of Zen","critic_votes":13,"director_votes":0},{"id":26,"name":"Harlan County, USA","critic_votes":13,"director_votes":1},{"id":27,"name":"Star Wars","critic_votes":13,"director_votes":1},{"id":28,"name":"The Hour of the Furnaces","critic_votes":13,"director_votes":1},{"id":29,"name":"Crash","critic_votes":13,"director_votes":1},{"id":30,"name":"Petite maman","critic_votes":13,"director_votes":2},{"id":31,"name":"Intolerance","critic_votes":13,"director_votes":2},{"id":32,"name":"Blue","critic_votes":13,"director_votes":4},{"id":33,"name":"EUROPA '51","critic_votes":13,"director_votes":4},{"id":34,"name":"Napol\u00e9on","critic_votes":13,"director_votes":4},{"id":35,"name":"Grave of the Fireflies","critic_votes":13,"director_votes":5},{"id":36,"name":"Happy Together","critic_votes":13,"director_votes":5},{"id":37,"name":"Cries and Whispers","critic_votes":13,"director_votes":6},{"id":38,"name":"The Green Ray","critic_votes":13,"director_votes":6},{"id":1,"name":"Born In Flames","critic_votes":12,"director_votes":0},{"id":2,"name":"A Canterbury Tale","critic_votes":12,"director_votes":0},{"id":3,"name":"L'INTRUS","critic_votes":12,"director_votes":0},{"id":4,"name":"Earth","critic_votes":12,"director_votes":1},{"id":5,"name":"Die B\u00fcchse der Pandora","critic_votes":12,"director_votes":1},{"id":6,"name":"Der Letzte Mann","critic_votes":12,"director_votes":1},{"id":7,"name":"My Darling Clementine","critic_votes":12,"director_votes":2},{"id":8,"name":"In Vanda's Room","critic_votes":12,"director_votes":2},{"id":9,"name":"Distant Voices, Still Lives","critic_votes":12,"director_votes":2},{"id":10,"name":"Videodrome","critic_votes":12,"director_votes":2},{"id":11,"name":"The Quince Tree Sun","critic_votes":12,"director_votes":3},{"id":12,"name":"Sullivan's Travels","critic_votes":12,"director_votes":3},{"id":13,"name":"Soleil \u00d4","critic_votes":12,"director_votes":4},{"id":14,"name":"SANG SATTAWAT","critic_votes":12,"director_votes":4},{"id":15,"name":"Possession","critic_votes":12,"director_votes":4},{"id":16,"name":"Nostalgia for the Light","critic_votes":12,"director_votes":4},{"id":17,"name":"Morvern Callar","critic_votes":12,"director_votes":6},{"id":18,"name":"Mouchette","critic_votes":12,"director_votes":6},{"id":19,"name":"WERCKMEISTER HARM\u00d3NI\u00c1K","critic_votes":12,"director_votes":7},{"id":20,"name":"Annie Hall","critic_votes":12,"director_votes":8},{"id":21,"name":"A Clockwork Orange","critic_votes":12,"director_votes":8},{"id":22,"name":"Taste of Cherry","critic_votes":12,"director_votes":9},{"id":171,"name":"Histoire(s) du cin\u00e9ma","critic_votes":1,"director_votes":3}];
+
+        // Transforming data for Highcharts scatter plot
+        var criticData = filmsByVote.map(function(film) {
+            return {
+                x: film.critic_votes,
+                y: film.director_votes,
+                name: film.name,
+                marker: { fillColor: 'rgba(119, 152, 191, 1)' } 
+            };
+        });
+
+
+        Highcharts.chart('scatterChart', {
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Film Votes Critics & Directors'
+            },
+            xAxis: {
+                title: {
+                    text: 'Critic Votes'
+                },
+                gridLineWidth: 1
+            },
+            yAxis: {
+                title: {
+                    text: 'Director Votes'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return `<b>${this.point.name}</b><br>Critic Votes: ${this.x}<br>Director Votes: ${this.y}`;
+                }
+            },
+            series: [{
+                name: 'Films',
+                data: criticData
+            }]
+        });
+    </script>
+   
+
+</body>
+</html>
